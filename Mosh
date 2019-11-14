@@ -1,0 +1,875 @@
+programs: 
+-> Python always consdire as a string which we give in the program
+-.> Python is a case sensitive
+-> for format method we use 'f '
+-> Operator Precedence ('/','*','-','+')
+-> First precedence give to in side parateces  ()
+-> by using import math , we can use all math functions
+-> check python 3 math function document.
+-> Logical Operators: And, Or, Not
+-> Comparison Operator : '>','<','==','!=
+-> List is suppoert assignment. It is a mutable. Can change the items
+-> Tuple does not support assignment. It is a immutable. Cannot change the items.
+-> Dictionaries : It is lika a key value pairs.
+-> Function : it perform on few lines and perform specfic task
+-> print  required some information  to print but function doesn't required any information.
+-> To handle error in python we have try and except .
+-> classes usd for defining new type.
+-> Constructor is a function that gets call at time of creating object.
+
+Pro:1
+price= 100
+price= 200
+print(price)
+O/P : 200
+* It will print 200 because print will read all the line and execute the line 
+Pro:2
+Full_name = 'Praneetha'
+Age= 26
+print(Full_name, Age)
+Pro:3
+name= input('what is your name ?')
+print ('Hi ' + name)
+O/P : what is your name ?>?
+Praneetha
+Hi Praneetha
+* First it will print what is your name
+We have to give our name using keyboard, then it will print
+Hi Praneetha
+Pro:4
+name= input('what is your name ?')
+color=input('what is your fav color')
+print ( name + ' likes ' + color)
+O/P: what is your name ?>? pinky
+what is your fav color>? blue
+pinky likes blue
+Pro:5
+birth_year= input('Birth_Year')
+age= 2019- int(birth_year)
+print (age)
+O/P: Birth_Year>? 1994
+25
+*We can check the age difference.
+* As a input i enter string '1994'
+ain the line age the string converted into int and gave 25 as output.
+Pro:6
+ course= "python's course for beginners"
+print (course)
+ If we want to print      's   use  double quots in the begin and end so it will print 
+O/P : python's course for beginners
+Pro:7
+course= 'python course for "Beginners"'
+print (course)
+
+* To print important point in double quotes
+O/P: python course for "Beginners"
+Pro:8
+course= '''python course for "Beginners
+I started learning python'''
+print (course)
+
+O/P : python course for "Beginners
+I started learning python
+*To print more number of lines have to use ''' '''
+Pro:9
+course= 'python course for Beginners'
+print (course[9])
+O/P:  u
+*We can print required index using []
+* In Python index number start with 0 and space also counted.
+Pro:10
+course= 'python course for Beginners'
+print (course[-9])
+O/P: B
+* To print the reverse index use negavtive integer example -3. It will count from end 
+Pro:11
+ course= 'python course for Beginners'
+print (course[0:])
+OR
+course= 'python course for Beginners'
+print (course[ : ])
+O/P: python course for Beginners
+*To print the whole line 
+Pro:12
+course= 'python course for Beginners'
+print (course[ 1:-1 ])
+O/P: ython course for Beginner
+* We can remove the first and last letter in the line.
+Pro:13
+first= 'praneetha'
+last='katra'
+msg= first + '[' + last +'] is a coder'
+message= f'{first} [{last}] is a coder'
+print (message)
+O/P: praneetha [katra] is a coder
+* By   using   msg= first + '[' + last +'] is a coder'  this method it may not understand what is the output.
+* By using message= f'{first} [{last}] is a coder' this method we can easily now what is gonig to print f is a format method
+
+pro:14
+How to count the letters ? 
+len
+course ="python is a code"
+print (len(course))
+O/P: 16
+pro:15
+How to convert into upper case
+upper
+course ="python is a code"
+print ((course.upper()))
+O/P: PYTHON IS A CODE
+Pro:16
+how to convert into  lower case
+lower
+course ="PYTHON IS A CODE"
+print ((course.lower()))
+O/P: python is a code
+Pro:17
+How to know paticular letter index postion
+find
+course ="PYTHON IS A CODE"
+print(course.find('O'))
+O/P: 4
+Pro:18
+How to replace paticular letter or word are sentence
+replace
+course ="PYTHON IS A CODE"
+print(course.replace('CODE','coder'))
+O/P: PYTHON IS A coder
+Pro:19
+How to find paticular letter or word or sentence in the exist line 
+in
+course ="PYTHON IS A CODE"
+print('PYTHON' in course)
+O/P: true
+Pro:20
+How to make paticular word as title
+
+Pro:21
+Arthematic operation:
+print(10 + 2)
+print(10 - 2)
+print(10 * 2)
+print(10 // 2)
+Pro:22
+Assignment Operator
+x=10
+print(x + 2)
+
+O/p:12
+x=10
+x+=2
+print(x)
+
+x=10
+x-=2
+print(x)
+
+Pro:23
+Operator Precedence
+x=10+3-2*4/6
+print(x)
+O/P: 11.666666666
+Pro:24
+How to get output without float method
+round
+x=10.3
+print(round(x))
+O/P: 10
+Pro:25
+x=-10.3
+print(round(x))
+O/P: -10
+Pro:26
+How to round the nearest high number
+ceil
+import math
+x=10.3
+print(math.ceil(x))
+O/P: 11
+pro:27
+How to round the nearst lower number
+floor
+import math
+x=10.3
+print(math.floor(x))
+O/P: 10
+Pro:28
+How to use 'if'
+is_hot= True
+if is_hot:
+ print("it's a hot day")
+print("Enjoy the day")
+O/P:it's a hot day
+Enjoy the day
+* if statement is true , print both statements.
+Pro: 29
+is_hot= False
+if is_hot:
+ print("it's a hot day")
+
+print("Enjoy the day")
+If statement is false print last one
+O/P: Enjoy the day
+Pro: 30
+Use if and else
+is_hot= False
+if is_hot:
+ print("it's a hot day")
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+O/P: Enjoy the day
+* If statement is false the only last time will print
+Pro:31
+is_hot= True
+if is_hot:
+ print("it's a hot day")
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+
+* If statent is true , it prints first two lines.
+Pro:32
+ How to use esif statement to print different contions
+is_hot= True
+is_cold: False
+if is_hot:
+ print("it's a hot day")
+elif is_cold:
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+o/P: it's a hot day
+Pro:33
+is_hot= False
+is_cold=True
+if is_hot:
+ print("it's a hot day")
+elif is_cold:
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+O/P: it's a your day
+pro: 34
+is_hot= False
+is_cold=False
+if is_hot:
+ print("it's a hot day")
+elif is_cold:
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+
+O/P:Enjoy the day
+Pro:35
+is_hot= True
+is_cold=True
+if is_hot:
+ print("it's a hot day")
+elif is_cold:
+ print("it's a your day")
+else:
+ print("Enjoy the day")
+
+*If both are true, then it will print only first statement.
+Pro:36
+Logical Operators
+And , or, Not
+High_income= True
+Good_credit=True
+if High_income and Good_credit:
+    print("Ok")
+O/P: ok
+And: Two conditions must be true.
+High_income= True
+Good_credit=False
+if High_income or Good_credit:
+    print("Ok")
+
+O/P: ok
+OR: atleast one statement is true.
+High_income= True
+Good_credit=False
+if High_income and not Good_credit:
+    print("Ok")
+O/P: ok
+Not give reverse output. true changes to flase
+Pro:37
+Comparison Operator
+temp= 30
+if temp>30:
+    print("it is hot")
+else:
+    print("not hot")
+
+O/P: not hot
+
+temp= 30
+if temp<30:
+    print("it is hot")
+else:
+    print("not hot")
+O/P: it is hot
+Pro:38
+name= 'pinky'
+if len(name)>3:
+ print("name has atleast 3 char")
+elif len(name)<50:
+    print("name has more than 3 char")
+else:
+    print("name is good")
+
+Pro:39
+How to use while loop
+i=1
+while i<=5:
+    print('*' * i)
+    i=i+1
+O/P:
+*
+**
+***
+****
+*****
+Pro:40
+For Loop
+How to use List?
+for item in ['m','k','l']:
+    print(item)
+
+O/P: M
+     k
+    l
+Pro:41
+for item in range(10):
+    print(item)
+* It wil print 0 to 9
+Pro:42
+for item in range(5,10):
+    print(item)
+* It will print 5,6,7,8,9
+for item in range(5,10,2):
+    print(item)
+*It will print 5,7,9
+Pro:43
+prices = [10,20,30]
+total =0
+for price  in prices:
+    total += price
+print(f"Total:{total}")
+Pro:44
+nested loop
+Loop inside loop:
+for x in range(4):
+    for y in range(3):
+        print(f'({x},{y})')
+(0,0),(0,1),(0,2),(1,0),(1,1),(1,2)
+(2,0),(2,1),(2,2),(3,0),(3,1),(3,2)
+
+Pro:45
+num= [5,1,5,2,1,1]
+for x_count in num:
+    print('x' * x_count)
+
+O/P:
+xxxxx
+x
+xxxxx
+x
+Pro:46
+num= [5,1,5,2,1]
+for x_count in num:
+    output=''
+    for count in range(x_count):
+        output += 'X'
+    print(output)
+
+O/P:
+XXXXX
+X
+XXXXX
+X
+X
+Pro:47
+List
+name = ['Anu','Adi','Prani','Anil','Ajay']
+print(name[0:])
+
+O/P:
+['Anu', 'Adi', 'Prani', 'Anil', 'Ajay']
+Pro:48
+name = ['Anu','Adi','Prani','Anil','Ajay']
+print(name[2:4])
+
+O/P: ['Prani', 'Anil']
+Pro:49
+name = ['Anu','Adi','Prani','Anil','Ajay']
+name[0]= 'john'
+print(name[-1:])
+print(name)
+O/P:
+['Ajay']
+['john', 'Adi', 'Prani', 'Anil', 'Ajay']
+first print line gives only last name.
+seconds print line gives only change first name and gives all lines.
+Pro:50
+List using for loop
+name = [3,6,2,8,4,10]
+max=name[0]
+for number in name:
+    if number>max:
+        max=number
+print(max)
+O/P:
+10
+Pro:51
+2D: List
+num=[
+    1,2,3,
+    4,5,6,
+    7,8,9
+
+]
+matrix= [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+for row in matrix:
+    for item in row:
+        print(item)
+O/P:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Pro:52
+List Method
+Append: It will add new number at last in the output
+num= [5,2,1,3,7]
+num.append(20)
+print(num)
+[5, 2, 1, 3, 7, 20]
+Pro:53
+Insert: I t will insert the new number i a paticular postion by using Inder number
+num= [5,2,1,3,7]
+num.insert(3,10)
+print(num)
+[5, 2, 1, 10, 3, 7]
+Pro:54
+Remove : To remove paticural number
+num= [5,2,1,3,7]
+num.remove(3)
+print(num)
+O/P:[5, 2, 1, 7]
+pro:55
+pop: remove last number
+num= [5,2,1,3,7]
+num.pop()
+print(num)
+O/P: [5, 2, 1, 3]
+Pro:56
+Clear : It will remove all the items
+num= [5,2,1,3,7]
+num.clear()
+print(num)
+Pro:57
+Index method
+num= [5,2,1,3,7]
+print(5 in num)
+O/P: True
+Pro:58
+num= [5,2,1,3,7]
+print(50 in num)
+O/P: False
+pro:59
+num= [5,2,1,3,7,1,3,3,3]
+print(num.count(1))
+O/P: 2
+* It count jow many '1' are there in the items.
+Pro:60
+Sort method in asc
+num= [5,2,1,3,7,1,3,3,3]
+num.sort()
+print(num)
+O/P:[1, 1, 2, 3, 3, 3, 3, 5, 7]
+Sort method in Desc
+num= [5,2,1,3,7,1,3,3,3]
+num.sort()
+num.reverse()
+print(num)
+O/P: [7, 5, 3, 3, 3, 3, 2, 1, 1]
+Pro:60
+Copy of orignal list
+num= [5,2,1,3,7,1,3,3,3]
+number=num.copy()
+number.sort()
+number.reverse()
+print(num)
+print(number)
+O/P:[5, 2, 1, 3, 7, 1, 3, 3, 3]
+[7, 5, 3, 3, 3, 3, 2, 1, 1]
+*Second line in the program help us to copy the orignal list and perform the operations on it, without distrubing the orginal list.
+Pro:61
+How to remove duplicate.
+num= [5,2,1,3,7,1,3,3,3]
+uniques=[]
+for numbers in num:
+    if numbers not in uniques:
+       uniques.append(numbers)
+print(uniques)
+O/P: [5, 2, 1, 3, 7]
+Pro:62
+Tuples:
+num=(1,2,3)
+num[0]=10
+print(num[0])
+TypeError: 'tuple' object does not support item assignment
+Pro:63
+Unpacking
+num=(1,2,3)
+x,y,z= num
+print(y)
+O/P: 2
+num=(1,2,3)
+x,y,z= num
+print(y*z)
+O/P: 6
+* Unpacking help us to print paticular items.
+*It will help us do different operation with indexes like add, sub, multiplying e.t.c.
+Pro:64
+Dictionaries : It is lika a key value pairs
+customer={
+    "name": "pranitha",
+    "age" : 30,
+    "sal":20,
+    "is_verified": True
+}
+print (customer["name"])
+O/p: pranitha
+* In this program name is a give and it print the value which is mentioned in the input.
+* If the key is not exist, then it will give error type.
+Pro:65
+customer={
+    "name": "pranitha",
+    "age" : 30,
+    "sal":20,
+    "is_verified": True
+}
+print (customer.get("age"))
+O/P: 30
+* get method : we can use '()' if we use get 
+* Without get we have to use'[]'
+Pro:66
+customer={
+    "name": "pranitha",
+    "age" : 30,
+    "sal":20,
+    "is_verified": True
+}
+print (customer.get("birthdate","jan 1 1980"))
+or we can write 
+customer[" birthdate"] = "jan 1 1980"
+print(customer["birthdate])
+
+O/P: jan 1 1980
+* Get used to insert the new data.
+
+Pro:67
+phone= input("phone:")
+digi_mapping={
+"1": "One",
+"2": "two",
+"3": "three",
+"4": "four"
+}
+output= ""
+for ch in phone:
+    output +=digi_mapping.get(ch,"!") + ""
+    print(output)
+
+O/P: One
+Onethree
+Onethreefour
+Pro:68
+split is used to divide the sentence in words.
+Input Hi ra 
+msg=input(">")
+words=msg.split(' ')
+print(words)
+O/P: [Hi, ra ]
+Pro: 69
+Emoji Symbols
+msg=input(">")
+words=msg.split(' ')
+emojis= {
+    ":)" : " :("
+}
+output= ""
+for word in words:
+    output += emojis.get(word,word)+ " "
+print(output)
+* Not Understood.
+Pro:70
+Function : it perform on few lines and perform specfic task.
+After function defination , give two blank lines.
+First we have to defined the function and call the function.
+Pro: 71
+parameter means which supply in defined function line.
+argument means which is sullpy in calling function line.
+def greet_user(name):
+
+   print (f'Hi {name}!')
+   print('welcome')
+
+
+print("Start")
+greet_user("John")
+greet_user("marry")
+print("Finish")
+O/P:
+Start
+Hi John!
+welcome
+Hi marry!
+welcome
+Finish
+Pro:72
+Keyword Argument:
+* In Python first we have to give postion argument and give keyword argument.
+def greet_user(first_name, last_name):
+
+   print (f'Hi {first_name, last_name}!')
+   print('welcome')
+
+
+print("Start")
+greet_user("John", last_name= "smith") -------> John is postion argument, smith we
+                                                gave key word argument.                 
+print("Finish")
+Pro:73
+Return argument:
+def square(number):
+    return number*number
+print(square(3))
+
+O/P: 9
+pro:74
+Exception
+exit code 0 : means program successfully excuted
+exit code 1: means program crash.
+type of the errors:
+value error 
+To handle error in python we have try and except 
+try:
+   age= int(input('age:'))
+   print(age)
+except ValueError:
+    print('Invalid value')
+
+O/P :age:>? qw
+Invalid value
+* Using try and exception , we will get invalid value message, if we give wrong input. 
+* different error are their for different issues.
+Pro: 75
+Comments:
+to avoid the line in the execution part 
+'#'
+Don't give length comments. Just use meaningfull and short comments which is understand by other developers.
+
+Pro: 76
+Classes: It is used to define new types. 
+Base type: numbers, strings, booleans
+compleix type: list, dictionaries
+base type and compleix are comman. but classes used for defining new type.
+Each attribute is different argument.
+class Point:
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+
+Point1 = Point()
+Point1.x=10 ----> x is a attribute so , it doesn't occur any error
+Point2=20   ----> there is no attribute so if we print point2, we will get          
+print(Point1.x)                                                   error
+Point1.draw()
+O/P: 10
+     draw
+Pro:77
+Constructor : constructor is a function it is called at the time of creating a object.
+class Point:
+    def __init__(self , x, y): ---> __init__(self ) x and y are parameter
+        self.x=x               ---> using init , we can instialize the object. 
+        self.y=y                    this method used to create or construct    
+    def move(self):                 object.
+        print("move")
+    def draw(self):
+        print("draw")
+
+Point = Point(10,20) --> 10 and 20 are object
+Point.x= 11 ---> we can change the object
+print(Point.x)
+O/P: 11
+Pro:78
+class Person:
+    def ___init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"hi, i am { self.name}")
+
+
+john = Person("John")
+john.talk()
+
+bob = Person("smith")
+bob.talk()
+
+O/P:
+Pro:79
+Inheritance : child class will have same behavior of parent class.
+class mammal:
+      def walk(self):--->class behavior will pass to all child classes.
+          print("walk")
+
+
+class dog(mammal):
+    pass
+
+
+class cat(mammal):
+    pass
+
+dog1=dog()
+dog1.walk()
+O/P: walk
+Pro:80
+class mammal:
+ def walk(self):
+          print("walk")
+
+
+class dog(mammal):
+    pass
+
+
+class cat(mammal):
+ def  be__annoying(self):
+    print("annoying")
+
+
+cat1=cat()
+cat1.be__annoying()
+O/P: annoying
+
+Pro:81
+Modules : File with some python code and orginazer code used in multiple files. 
+Each file is modules.
+Modules is contain related all functions and class.
+Main Program:
+def find_max(num):
+    max = (num[0])
+    for number in num:
+        if number > max:
+            max = number
+    return max
+
+subprogram:
+from utils import find_max
+num=[1,4,20,50]
+maximum=find_max(num)
+print(maximum)
+
+O/P: 50
+
+Pro:81
+Packages : It is a container for multiple modules.
+Package is a director or folder.
+In package we can add directory , in that directory we can add all the modules
+Pro:82
+Generate random values:
+https://docs.python.org/3/py-modindex.html
+https://docs.python.org/3/py-modindex.html
+
+import random
+for i in range(3):
+    print(random.randint(10,20))
+O/P:
+15
+10
+12
+* it will print random number between 10 to 20
+pro:83
+import random
+
+class Dice:
+     def roll(self):
+         first = random.randint(1,6)
+         second= random.randint(1,6)
+         return first, second
+dices= Dice()
+print(dices.roll())
+O/P: (1,3)
+Pro:84
+Files and directories : 
+How to check the path exist are not
+from pathlib import Path
+path=Path("Ecommerce")
+print(path.exists())
+
+O/P: True
+Pro: 85
+How to create a directory if it is not exist.
+from pathlib import Path
+path=Path("Email")
+print(path.mkdir())
+Pro:86
+How to remove directory
+from pathlib import Path
+path=Path("Email")
+print(path.rmdir())
+
+Pro: 87
+How to check all the directories and files in given path
+from pathlib import Path
+path=Path( )
+for file in path.glob(' * '):
+    print(file)
+
+Pro: 88
+PyPi and Pip(Huh?)
+Install it 
+https://pypi.org/project/openpyxl/
+Pro:89
+Excel Spreadsheet
+How to proccess spread by using python
+Click on project 
+click on Reveal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
